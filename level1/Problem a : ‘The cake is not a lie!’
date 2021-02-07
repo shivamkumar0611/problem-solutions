@@ -19,3 +19,13 @@ Output:4
 Input:
 solution.solution("abccbaabccba")
 Output: 2
+
+Java Cases
+Solution.solution("abcabcabcabc")
+Output: 4
+
+Input:
+Solution.solution("abccbaabccba")
+Output: 2
+
+ApproachTo solve this, The first thing I did was to visualize the problem, so as to get a better understanding. I just imagined watching a round cake from top view and assigned few letters (a,b,c,d) to different sections of it in a repeating pattern.Now that we have visualized it. We can easily infer that, basically all we have to do is to look for repeating sub-strings in the string.Of course, We need to keep important things in mind before we begin actually writing the code, The function would need to return 0 if the cake could not be cut without leftovers or if the string was empty. We need to identify possible M&M patterns from the input string. The pattern surely could not be longer than half the length of the string. We need to check to see if there were remainders when chopping the string with the possible patterns and discard those results.
